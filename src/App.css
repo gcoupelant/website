@@ -1,0 +1,74 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background: center no-repeat url('./static/background.jpg');
+    background-size: cover;
+}
+
+.shape {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 600px;
+    position: relative;
+}
+
+.shape svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: #445;
+}
+
+.shape svg polygon {
+    fill: #eee;
+}
+
+.shape svg polygon.back {
+    fill: #aac;
+    fill-opacity: 0.5;
+}
+
+.shape svg text {
+    background-color: #eee;
+    font-style: italic;
+    font-weight: 100;
+    text-anchor: middle;
+}
+
+.shape svg .clickable {
+    cursor: pointer;
+}
+
+.shape svg .github:hover {
+    fill: #000;
+}
+
+.shape svg .twitter:hover {
+    fill: #4099FF;
+}
+
+.shape svg .email:hover {
+    fill: #bbb;
+}
+
+.shape svg .linkedIn:hover {
+    fill: #007bb5;
+}
+
+.shape svg .stackoverflow:hover {
+    fill: #FF9900;
+}
+
+.shape svg a svg path {
+    transform: scale(1) rotate(-8deg);
+    transform-origin: 50% 50%;
+    transition: all .3s ease-out;
+}
+
+.shape svg a:hover svg path {
+    transform: scale(1.25);
+}
